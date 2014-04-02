@@ -1,0 +1,23 @@
+{
+  "name": "testcase",
+  "version": "0.0.0",
+  "homepage": "",
+  "authors": [
+    "Christophe Olinger <christophe@olinger.eu>"
+  ],
+  "description": "Testcase to debug http-proxy 1.0.3",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/lib"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.0",
+    "angular": "1.2.15",
+    "angular-ui-router": "0.2.8-bowratic-tedium",
+    "jquery": "~2.1.0",
+    "socket.io-client": "0.9.x"
+  }
+}
