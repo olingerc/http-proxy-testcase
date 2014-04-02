@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'client')));
 /**
  * Catch if user wants to go to websocket
  */
-var proxy = httpProxy.createProxy({target:'http://localhost:5500/socket.io/'});
+var proxy = httpProxy.createProxy({target:'http://localhost:5500/socket.io/', agent: new http.Agent({maxSockets:15})});
 app.use(function (req, res, next) {
   if (req.url.indexOf('/socket.io/')>-1) {
     proxy.web(req, res, function(err) {
